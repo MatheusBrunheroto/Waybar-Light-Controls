@@ -1,5 +1,5 @@
 ## Preview
-###### The colors are "changing fast" because of GIF compression.
+###### The colors appear to change rapidly due to GIF compression.
 | You can configure the brightness and blue light filter by scrolling through the icons. |
 | -------------------------------------- |
 |![Demonstration](https://github.com/user-attachments/assets/dc4c3dcb-0b0d-4743-9633-7d429c9becb2)|
@@ -38,6 +38,11 @@ Next, insert the following blocks into your Waybar configuration file under the 
         "on-scroll-down": "bash ~/.config/waybar/scripts/temperature_down.sh",
 },
 ```
+After editing your config, restart Waybar or reload it:
+```shell
+pkill waybar && waybar &
+```
+<hr>
 
 # Dependencies
 
