@@ -1,4 +1,4 @@
-## Preview
+# Waybar-Light-Controls
 ###### The colors appear to change rapidly due to GIF compression.
 | You can configure the brightness and blue light filter by scrolling through the icons. |
 | -------------------------------------- |
