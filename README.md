@@ -14,12 +14,12 @@ cd Waybar-Light-Controls
 chmod +x install.sh
 ./install.sh
 
-# The install.sh script creates two directories: one inside ~/.config/hypr and another inside ~/.config/waybar.
-# If the "scripts" directory does not exist, it will be created along with a "waybar-light-controls" subdirectory.
+# The install.sh script creates two directories:
+# one inside ~/.config/hypr and another inside ~/.config/waybar.
+# If the "scripts" directory does not exist,
+# it will be created along with a "waybar-light-controls" subdirectory.
 # The script then moves the files from this repository into the newly created directories.
 ```
-###### The install.sh script creates two directories: one inside ~/.config/hypr and another inside ~/.config/waybar. If the "scripts" directory does not exist, it will be created along with a "waybar-light-controls" subdirectory. The script then moves the files from this repository into the newly created directories.
-
 
 Next, insert the following blocks into your Waybar configuration file under the appropriate section (modules-left, modules-center, or modules-right):
 
