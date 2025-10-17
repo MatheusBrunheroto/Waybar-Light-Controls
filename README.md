@@ -1,4 +1,6 @@
 # Waybar-Light-Controls
+**Waybar integration for hyprsunset**, featuring configurable gamma and temperature limits, with persistent settings saved between sessions.
+<br>This behavior can alternatively be "achieved" by using direct Waybar actions, such as `hyprctl hyprsunset gamma +10` for `"on-scroll-up"` and `hyprctl hyprsunset gamma -10` for `"on-scroll-down"`.
 ###### The colors appear to change rapidly due to GIF compression.
 | You can configure the brightness and blue light filter by scrolling through the icons. |
 | -------------------------------------- |
@@ -26,16 +28,16 @@ Next, insert the following blocks into your Waybar configuration file under the 
 "custom/light":{
         "format": "{icon} ",
         "format-source": "{icon} ",
-        "format-icons": [""],
-        "on-scroll-up": "bash ~/.config/waybar/scripts/light_up.sh",
-        "on-scroll-down": "bash ~/.config/waybar/scripts/light_down.sh",
+        "format-icons": ["●"],
+        "on-scroll-up": "bash ~/.config/waybar/scripts/waybar-light-controls/light_control.sh up",
+        "on-scroll-down": "bash ~/.config/waybar/scripts/waybar-light-controls/light_control.sh down",
 },
 "custom/temperature":{
         "format": "{icon} ",
         "format-source": "{icon} ",
-        "format-icons": [""],
-        "on-scroll-up": "bash ~/.config/waybar/scripts/temperature_up.sh",
-        "on-scroll-down": "bash ~/.config/waybar/scripts/temperature_down.sh",
+        "format-icons": ["○"],
+        "on-scroll-up": "bash ~/.config/waybar/scripts/waybar-light-controls/temperature_control.sh up",
+        "on-scroll-down": "bash ~/.config/waybar/scripts/waybar-light-controls/temperature_control.sh down",
 },
 ```
 After editing your config, restart Waybar or reload it:
@@ -46,9 +48,8 @@ pkill waybar && waybar &
 
 # Dependencies
 
-You must have `gammastep` and `bc` installed for the scripts to function properly.
+You must have `hyprsunset` installed for the scripts to function properly.
 
 ```shell
-yay -S gammastep
-yay -S bc
+yay -S hyprsunset
 ```
