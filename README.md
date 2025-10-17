@@ -9,18 +9,17 @@
 
 # Installation
 ```shell
-# Clone the repository
 git clone https://github.com/MatheusBrunheroto/Waybar-Light-Controls.git
+cd Waybar-Light-Controls
+chmod +x install.sh
+./install.sh
 
-# Create the destination directory if it doesn't exist
-mkdir -p ~/.config/waybar/scripts/
-
-# Move the scripts to the destination directory
-mv Waybar-Light-Controls/scripts/* ~/.config/waybar/scripts/
-
-# Optionally, remove the cloned repository
-rm -rf Waybar-Light-Controls
+# The install.sh script creates two directories: one inside ~/.config/hypr and another inside ~/.config/waybar.
+# If the "scripts" directory does not exist, it will be created along with a "waybar-light-controls" subdirectory.
+# The script then moves the files from this repository into the newly created directories.
 ```
+###### The install.sh script creates two directories: one inside ~/.config/hypr and another inside ~/.config/waybar. If the "scripts" directory does not exist, it will be created along with a "waybar-light-controls" subdirectory. The script then moves the files from this repository into the newly created directories.
+
 
 Next, insert the following blocks into your Waybar configuration file under the appropriate section (modules-left, modules-center, or modules-right):
 
