@@ -23,9 +23,7 @@ if [ ! -d "$WAYBAR_DIR" ]; then
 fi
 
 
-
 TARGET="scripts/waybar-light-controls"
-
 # Reinstall in case the folder "waybar-light-controls" already exists
 if [ -d "$HYPR_DIR/$TARGET" ]; then
 	echo -e "\e[33m[!] WARNING: $HYPR_DIR/$TARGET already exists. Removing for reinstallation... \e[0m"
@@ -39,6 +37,7 @@ fi
 
 sleep 1
 echo -e " "
+
 
 create_directory() {
 
@@ -65,9 +64,11 @@ create_directory() {
 
     sleep 1
     echo -e " "
+	
 }
 create_directory "$HYPR_DIR"
 create_directory "$WAYBAR_DIR"
+
 
 cp -r "$REPO_DIR/scripts/hypr/"* "$HYPR_DIR/$TARGET"
 echo -e "\e[32m[✓] Files moved to $HYPR_DIR/$TARGET successfully!\e[0m"
@@ -77,8 +78,10 @@ cp -r "$REPO_DIR/scripts/waybar/"* "$WAYBAR_DIR/$TARGET"
 echo -e "\e[32m[✓] Files moved to $WAYBAR_DIR/$TARGET successfully!\e[0m"
 sleep 1.5
 
+
 echo -e "\n\e[32m[✓] Installation complete!\e[0m"
 echo "Next steps:"
 echo "  1. Configure your Waybar to use the scripts."
-echo "  2. Restart Waybar or your session to apply changes."
+echo "  2. Configure hyprland.conf exec-once."
+echo "  3. Restart Waybar or your session to apply changes."
 echo "Full guide available at: https://github.com/MatheusBrunheroto/Waybar-Light-Controls"
