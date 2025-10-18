@@ -32,6 +32,7 @@ Add the following blocks to your Waybar configuration file under the desired sec
 "custom/light":{
         "format": "{icon} ",
         "format-source": "{icon} ",
+        "tooltip": false,
         "format-icons": ["●"],
         "on-scroll-up": "bash ~/.config/waybar/scripts/waybar-light-controls/light_control.sh up",
         "on-scroll-down": "bash ~/.config/waybar/scripts/waybar-light-controls/light_control.sh down",
@@ -39,6 +40,7 @@ Add the following blocks to your Waybar configuration file under the desired sec
 "custom/temperature":{
         "format": "{icon} ",
         "format-source": "{icon} ",
+        "tooltip": false,
         "format-icons": ["○"],
         "on-scroll-up": "bash ~/.config/waybar/scripts/waybar-light-controls/temperature_control.sh up",
         "on-scroll-down": "bash ~/.config/waybar/scripts/waybar-light-controls/temperature_control.sh down",
