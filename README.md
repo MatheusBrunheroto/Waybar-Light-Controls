@@ -1,10 +1,12 @@
-# Waybar-Light-Controls
+# Waybar-Light-Controls (Hyprland)
+
 **Waybar integration for [hyprsunset](https://github.com/hyprwm/hyprsunset)**, featuring configurable gamma and temperature limits with persistent settings saved between sessions.  
 This behavior can alternatively be achieved using direct Waybar actions, such as:  
 ```shell
 hyprctl hyprsunset gamma +10   # on-scroll-up  
 hyprctl hyprsunset gamma -10   # on-scroll-down
 ```
+
 ###### The colors appear to change rapidly due to GIF compression.
 | You can configure the brightness and blue light filter by scrolling through the icons. |
 | -------------------------------------- |
