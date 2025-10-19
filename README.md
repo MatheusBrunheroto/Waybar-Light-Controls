@@ -10,7 +10,7 @@ hyprctl hyprsunset gamma -10   # on-scroll-down
 ###### The colors appear to change rapidly due to GIF compression.
 | You can configure the brightness and blue light filter by scrolling through the icons. |
 | -------------------------------------- |
-|![Demonstration](https://github.com/user-attachments/assets/dc4c3dcb-0b0d-4743-9633-7d429c9becb2)|
+|![Demonstration](./preview.mp4)|
 <hr>
 
 ## Installation
