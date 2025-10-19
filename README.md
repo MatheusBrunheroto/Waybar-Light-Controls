@@ -6,8 +6,9 @@ This behavior can alternatively be achieved using direct Waybar actions, such as
 hyprctl hyprsunset gamma +10   # on-scroll-up  
 hyprctl hyprsunset gamma -10   # on-scroll-down
 ```
+<br>
 
-You can configure the brightness and blue light filter by scrolling through the icons.
+**You can configure the brightness and blue light filter by scrolling through the icons.**
 
 https://github.com/user-attachments/assets/ff6f054d-ee42-4b01-bd5f-3ef2d9f4ae0c
 
